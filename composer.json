@@ -13,7 +13,9 @@
             "SecurityAdviser\\Console\\": "src/"
         }
     },
-    "bin": "bin/composer-security-adviser",
+    "bin": [
+        "bin/composer-security-adviser"
+    ],
     "require": {
         "symfony/console": "^5.2",
         "guzzlehttp/guzzle": "^7.2"
