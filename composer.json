@@ -1,0 +1,21 @@
+{
+    "name": "elijahcruz/composer-security-adviser",
+    "description": "Check for security vulnerabilities in your composer project in one command.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elijah Cruz",
+            "email": "elijah@ecwebservices.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SecurityAdviser\\Console\\": "src/"
+        }
+    },
+    "bin": "bin/",
+    "require": {
+        "symfony/console": "^5.2",
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}
