@@ -45,9 +45,8 @@ class RunSingle extends Command
         }
         
         if (!array_key_exists($name, $response_json['advisories'])) {
-            if ($output->isVeryVerbose()) {
                 $output->write('No advisories for ' . $name . ' Found' . PHP_EOL);
-            }
+                return 1;
         } else {
             if ($input->getOption('first')) {
                 foreach ($response_json['advisories'] as $advisory => $list) {
